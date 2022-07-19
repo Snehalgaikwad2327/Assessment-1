@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fibonacci Series inJavaScript</title>
+</head>
+<body>
+<script>
+
+const value = parseInt(prompt("Enter value till fibonacci series to be print :"))
+
+let firstNumber=0 , secondNumber=1 ,nextNumber;
+
+document.write("Fibonacci Series :");
+
+for(let i=1 ; i<=value ; i++)
+{
+	document.write("<br>" + firstNumber);
+
+	nextNumber = firstNumber + secondNumber;
+
+	firstNumber = secondNumber;
+
+	secondNumber = nextNumber;
+}
+</script>
+</body>
+</html>
