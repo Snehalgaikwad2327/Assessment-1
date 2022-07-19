@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Prime Number in JavaScript</title>
+
+</head>
+<body>
+<script>
+
+const value = parseInt(prompt("Enter positive Number : "));
+if (value == 1)
+{
+	document.write( value +" " + "Number is neither Prime nor Composite Number ");
+}
+else if (value > 1)
+{ 
+	let count=0;
+
+	for (let i=2 ; i<=value ; i++)
+	{
+
+		if (value % i  == 0)
+		{
+			count = count + 1;
+		}
+	}
+	if (count == 1)
+	{
+		document.write(value + " " + "is Prime Number");
+	}
+	else
+	{
+		document.write(value + " " + "is not a Prime Number");
+	}
+}
+else
+{
+	document.write( value +" " + "Number is not a Prime Number ");
+}
+
+
+</script>
+</body>
+</html>
